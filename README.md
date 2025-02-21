@@ -4,11 +4,12 @@
 `get_computers.sh` is a (very long!) EXPERIMENTAL Bash script that retrieves Mac device information from Jamf Pro using Advanced Computer Search groups in the Terminal. It supports various operations including viewing device status, OS distribution, and sending DDM updates. It uses Jamf API roles and clients for authentication so requires a Client ID and Client secret (see requirements)
 
 On first run you will be asked to enter:
-Jamf Pro URL
-Client ID
-Client Secret
-You can set the Advanced search group ID, if not set it will defaul to 113.
-Details are stored in .jamf_credentials 
+- Jamf Pro URL 
+- Client ID
+- Client Secret
+
+You can set the Advanced search group ID, if not set it will default to 113.
+Details are stored in /.jamf_credentials 
 
 ## Features
 - Retrieve device information from Jamf Pro
@@ -59,6 +60,7 @@ Run in debug mode:
 
 Run with a different search ID:
 `./get_computers.sh -i 276`
+
 Run in debug mode with a custom search ID:
 `./get_computers.sh -d -i 276`
 
