@@ -44,23 +44,23 @@ Details are stored in .jamf_credentials
 
 ## Usage
 Options
-```-d : Enable debug mode for detailed logging
+```
+-d : Enable debug mode for detailed logging
 -i search_id : Specify Jamf Pro Advanced Computer Search ID (default: 113)
 -h : Show help message
 ```
 
 Examples
 Run with default search ID
-```./get_computers.sh
-```
+`./get_computers.sh`
+
 Run in debug mode:
-```./get_computers.sh -d
-```
+`./get_computers.sh -d`
 
 Run with a different search ID:
-```./get_computers.sh -i 276```
+`./get_computers.sh -i 276`
 Run in debug mode with a custom search ID:
-```./get_computers.sh -d -i 276```
+`./get_computers.sh -d -i 276`
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
